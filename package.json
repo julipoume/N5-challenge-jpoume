@@ -1,0 +1,17 @@
+{
+  "name": "mfe-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start:host\" \"npm run start:characters\"",
+    "start:host": "npm run start --workspace=@mfe/host-app",
+    "start:characters": "npm run start --workspace=@mfe/characters-layout",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
