@@ -17,3 +17,4 @@ Desde el directorio raíz del proyecto, ejecuta:
  
   npm start
 
+Se puede ver en vercel: https://n5-challenge-jpoume-i4d6.vercel.app/
